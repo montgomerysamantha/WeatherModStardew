@@ -6,10 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherModStardew", "WeatherModStardew\WeatherModStardew.csproj", "{A63181F8-C2E8-44EB-B0FF-234FE7528A71}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E8EDF46B-7340-4E4A-87A1-A62BA61FB7AB}"
-	ProjectSection(SolutionItems) = preProject
-		manifest.json = manifest.json
-		ModEntry.cs = ModEntry.cs
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

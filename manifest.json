@@ -1,7 +1,7 @@
 {
   "Name": "WeatherModStardew",
   "Author": "Samantha",
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "Description": "A mod that allows you to predict as well as control the weather in Stardew Valley. You are Zeus.",
   "UniqueID": "Samantha.WeatherModStardew",
   "EntryDll": "WeatherModStardew.dll",
