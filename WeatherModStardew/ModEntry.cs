@@ -52,6 +52,37 @@ namespace WeatherModStardew
             string forecast = this.Helper.Reflection.GetMethod(new TV(), "getWeatherForecast").Invoke<string>();
 
             this.Monitor.Log($"{forecast}, tomorrow", LogLevel.Debug);
+
+            int weather = Game1.weatherForTomorrow;
+
+            string weatherFriendly = "";
+
+            switch (weather)
+            {
+                case 0:
+                    weatherFriendly = "Sunny";
+                    break;
+                case 1:
+                    weatherFriendly = "Rainy";
+                    break;
+                case 2:
+                    weatherFriendly = "Windy";
+                    break;
+                case 3:
+                    weatherFriendly = "Thunderstorm";
+                    break;
+                case 4:
+                    weatherFriendly = "Sunny for Festival";
+                    break;
+                case 5:
+                    weatherFriendly = "Snow";
+                    break;
+                case 6:
+                    weatherFriendly = "Sunny for Wedding";
+                    break;
+            }
+
+            Game1.addHUDMessage(new HUDMessage($"Tomorrow: {weatherFriendly}", 2));
         }
     }
 }
